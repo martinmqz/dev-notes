@@ -61,6 +61,50 @@ useEffect(() => {
 return () => window.removeEventListener('scroll', handleScroll);
 ```
 
+## What is `requestAnimationFrame`?
+
+`requestAnimationFrame` is a browser API that schedules a callback to run **before the next repaint**, making it ideal for smooth, efficient animations.
+
+---
+
+## 🧠 What It Does
+
+- Queues a callback to run **once per frame**, just before the browser repaints.
+- Syncs with the **display’s refresh rate** (typically 60Hz → ~16.67ms/frame).
+- Allows the browser to **batch DOM reads/writes** for optimal performance.
+- Prevents layout thrashing and reduces jank.
+
+---
+
+## 🆚 Why Not `setTimeout`?
+
+| Feature                  | `requestAnimationFrame` | `setTimeout` / `setInterval` |
+|--------------------------|--------------------------|-------------------------------|
+| Syncs with screen refresh | ✅ Yes                   | ❌ No                         |
+| Avoids frame drops        | ✅ Yes                   | ❌ Often                      |
+| Auto-pauses in background | ✅ Yes                   | ❌ No                         |
+| Optimized for animations  | ✅ Yes                   | ❌ No                         |
+
+---
+
+## 🧪 Example
+
+```js
+function animate(timestamp) {
+  // Your animation logic here
+  updateScene(timestamp);
+  drawFrame();
+
+  // Schedule next frame
+  requestAnimationFrame(animate);
+}
+
+// Start animation loop
+requestAnimationFrame(animate);
+```
+
+---
+
 ## 🧾 Final Thoughts
 
 While this implementation might be considered a micro-optimization for a relatively simple sticky bar scenario, it’s a valuable pattern to keep in mind for future projects — especially those involving frequent scroll events, animations, or dynamic UI updates. Knowing when and how to use `requestAnimationFrame` can help you write smoother, more performant interfaces without relying on heavier abstractions.
