@@ -112,3 +112,4 @@ While this implementation might be considered a micro-optimization for a relativ
 ## 🏷️ Tags
 #requestAnimationFrame, #scroll #performance, #sticky-UI, #cta, #react, #frontend-snippet
 
+![image](https://martinstack.dev/pixel?r=dev-notes&f=requestAnimationFrame)
