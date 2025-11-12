@@ -43,26 +43,6 @@ useEffect(() => {
   window.addEventListener('scroll', handleScroll);
   return () => window.removeEventListener('scroll', handleScroll);
 }, []);
-useEffect(() => {
-  let ticking = false;
-
-  const handleScroll = () => {
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(() => {
-        const cta = document.querySelector('#main-cta');
-        const rect = cta?.getBoundingClientRect();
-        const isVisible = rect && rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-        setStickyVisible(!isVisible);
-        ticking = false;
-      });
-    }
-  };
-
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-}, []);
 ```
 
 ## ✅ Benefits
