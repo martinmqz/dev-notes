@@ -1,1 +1,0 @@
-const requestAnimationFrame = window.requestAnimationFrame || function(callback) { return callback; }; requestAnimationFrame(() => { console.log('Hello World!'); });
