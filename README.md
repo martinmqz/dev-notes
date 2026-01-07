@@ -66,6 +66,11 @@ This is a personal knowledge base, but if you’d like to suggest improvements o
 ## Notes
 
 
+
+### [Testing a test note auto published by AI](./notes/testing-a-test-note-auto-published-by-ai)
+
+A technical note.
+
 ### [My First Note](./notes/my-first-note)
 
 This is a test note about TypeScript.
