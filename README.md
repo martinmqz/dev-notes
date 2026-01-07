@@ -62,3 +62,11 @@ This repo is public by design. If you find something useful, feel free to reuse 
 
 This is a personal knowledge base, but if you’d like to suggest improvements or share your own insights, feel free to open an issue or PR.
 
+
+## Notes
+
+
+### [My First Note](./notes/my-first-note)
+
+This is a test note about TypeScript.
+
