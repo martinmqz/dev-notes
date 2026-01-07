@@ -69,6 +69,11 @@ This is a personal knowledge base, but if you’d like to suggest improvements o
 
 
 
+
+### [A clear, descriptive title](./notes/url-safe-slug-with-hyphens)
+
+A brief 1-2 sentence summary
+
 <!-- 
 
 -->
