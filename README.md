@@ -77,6 +77,11 @@ This is a personal knowledge base, but if you’d like to suggest improvements o
 
 
 
+
+### [Testing a test note auto published by AI](./notes/testing-a-test-note-auto-published-by-ai)
+
+A technical note.
+
 ### [Testing a test note auto published by AI](./notes/testing-a-test-note-auto-published-by-ai)
 
 A technical note.
