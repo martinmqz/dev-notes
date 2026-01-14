@@ -15,6 +15,7 @@ To tell Tailwind which files it should scan, you must explicitly point to your s
 
 /* Tell Tailwind to scan the shared UI package */
 @source "../../../packages/ui/src"; /* Adjust the path to your UI components */
+```
 
 
 
