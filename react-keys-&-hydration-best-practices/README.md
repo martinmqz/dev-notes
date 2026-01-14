@@ -48,3 +48,46 @@
 5. Testing for Reliability
    • Add a Vitest example: test that adding/removing rows preserves input values when using stable IDs.
    • Contrast with a failing test when using array indexes.
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+-->
+![ ](https://api.webect.com/px?r=dev-notes&n=reactkeyshydrationbestpractices)
